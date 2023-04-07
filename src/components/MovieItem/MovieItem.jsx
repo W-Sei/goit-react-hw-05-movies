@@ -2,7 +2,6 @@ import propTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
 import { Item, Info, Image, Title, Vote } from './MovieItem.styled';
 import noPoster from '../images/noMovie.png';
-import { GlobalStyles } from 'GlobalStyles.styled';
 
 export function MoviesListItem({ id, title, poster, vote }) {
   const location = useLocation();

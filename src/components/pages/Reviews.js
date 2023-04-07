@@ -9,9 +9,9 @@ export default function ReviewsPage() {
   const { movieId } = useParams();
 
   useEffect(() => {
-    fetchMoviesReviews(movieId).then(r => {
+    fetchMoviesReviews(movieId).then(res => {
       const mappedReviews = [];
-      r.results.map(({ author, content, id }) => {
+      res.results.map(({ author, content, id }) => {
         const authorReview = {
           id: id,
           author: author,

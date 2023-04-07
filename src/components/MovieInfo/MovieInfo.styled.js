@@ -45,25 +45,6 @@ export const InfoText = styled.p`
   margin-bottom: 20px;
 `;
 
-// export const ReturnBtn = styled.button`
-//   width: 80px;
-//   height: 30px;
-//   font-size: 12px;
-//   background-color: #585858;
-//   color: white;
-//   border: none;
-//   border-radius: 4px;
-//   margin-top: 100px;
-//   transform: scale(1);
-//   transition: all 250ms;
-//   :hover {
-//     transform: scale(0.92);
-//   }
-//   :hover {
-//     opacity: 0.8;
-//   }
-// `;
-
 export const ExtraInfo = styled.div``;
 
 export const Wrapper = styled.div`
