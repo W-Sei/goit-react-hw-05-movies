@@ -5,10 +5,18 @@ export const ReviewsList = styled.ul`
 `;
 export const Item = styled.li`
   border: transparent;
-  border-radius: 7px;
+  border-radius: 0px;
+  max-width: 1000px;
+margin: 0 auto;
   background-color: #fadadd;
   padding: 40px;
   margin-bottom: 10px;
+  transition: all 250ms;
+  :hover {
+    transform: scale(1.3);
+    border: 1px solid purple;
+    border-radius: 10px;
+  }
 `;
 export const Author = styled.p`
   font-size: 15px;
