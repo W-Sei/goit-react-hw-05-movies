@@ -7,7 +7,7 @@ export const Item = styled.li`
   border: transparent;
   border-radius: 0px;
   max-width: 1000px;
-margin: 0 auto;
+  margin: 0 auto;
   background-color: #fadadd;
   padding: 40px;
   margin-bottom: 10px;
