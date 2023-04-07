@@ -4,7 +4,8 @@ export const ReviewsList = styled.ul`
   padding: 40px 90px;
 `;
 export const Item = styled.li`
-  border: 1px solid purple;
+  border: transparent;
+  border-radius: 7px;
   background-color: #fadadd;
   padding: 40px;
   margin-bottom: 10px;
