@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { List } from './MovieList.styled';
 import { MoviesListItem } from 'components/MovieItem/MovieItem';
 
@@ -21,12 +21,12 @@ export const MoviesList = ({ movies }) => {
 };
 
 MoviesList.propTypes = {
-  movies: propTypes.arrayOf(
-    propTypes.exact({
-      id: propTypes.number.isRequired,
-      original_title: propTypes.string.isRequired,
-      poster_path: propTypes.string.isRequired,
-      vote_average: propTypes.number.isRequired,
+  movies: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.number.isRequired,
+      original_title: PropTypes.string.isRequired,
+      poster_path: PropTypes.string.isRequired,
+      vote_average: PropTypes.number.isRequired,
     })
   ),
 };

@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { ReviewsList, Item, Author, ReviewContent } from './Reviews.styled';
 
 export function Reviews({ reviews }) {
@@ -17,11 +17,11 @@ export function Reviews({ reviews }) {
   );
 }
 Reviews.propTypes = {
-  reviews: propTypes.arrayOf(
-    propTypes.shape({
-      id: propTypes.string,
-      author: propTypes.string,
-      review: propTypes.string,
+  reviews: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      author: PropTypes.string,
+      review: PropTypes.string,
     })
   ).isRequired,
 };

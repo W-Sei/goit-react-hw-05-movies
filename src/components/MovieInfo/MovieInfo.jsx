@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import ReturnBtn from 'components/ReturnBtn/ReturnBtn';
 import {
@@ -71,17 +71,17 @@ export function MovieInfo({ movieDetails }) {
 }
 
 MovieInfo.propTypes = {
-  movieDetails: propTypes.shape({
-    title: propTypes.string,
-    genres: propTypes.arrayOf(
-      propTypes.shape({
-        id: propTypes.number,
-        name: propTypes.string,
+  movieDetails: PropTypes.shape({
+    title: PropTypes.string,
+    genres: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string,
       })
     ),
-    poster: propTypes.string,
-    overview: propTypes.string,
-    releaseDate: propTypes.string,
-    vote: propTypes.number,
+    poster: PropTypes.string,
+    overview: PropTypes.string,
+    releaseDate: PropTypes.string,
+    vote: PropTypes.number,
   }),
 };

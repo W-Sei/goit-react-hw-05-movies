@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import actorIcon from '../images/noActor.png';
 import { CastsList, Item, Photo, ActorName } from './Cast.styled';
 
@@ -26,11 +26,11 @@ export function Cast({ cast }) {
 }
 
 Cast.propTypes = {
-  cast: propTypes.arrayOf(
-    propTypes.shape({
-      id: propTypes.number,
-      name: propTypes.string,
-      photo: propTypes.string,
+  cast: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      photo: PropTypes.string,
     })
   ).isRequired,
 };
